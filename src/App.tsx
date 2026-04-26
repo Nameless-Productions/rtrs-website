@@ -2,6 +2,7 @@ import { useState } from 'react';
 import MainPage from './components/MainPage'
 import WishlistPage from './components/WishlistPage';
 import CareersPage from './components/CareersPage';
+import GamesPage from './components/GamesPage';
 
 export default function App() {
   const [page, setPage] = useState("home");
@@ -20,7 +21,7 @@ export default function App() {
     <main className='m-3'>
       {page === "home" && <MainPage setPage={setPage} />}
       {page === "wishlist" && <WishlistPage />}
-      {page === "games" && <p className='font-bold'>Games coming soon!</p>}
+      {page === "games" && <GamesPage />}
       {page === "careers" && <CareersPage />}
     </main>
   </>)
