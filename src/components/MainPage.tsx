@@ -8,5 +8,23 @@ export default function MainPage({setPage}: {setPage: any}) {
 
     <br />
     <button onClick={() => setPage("games")} className="btnNormal">See our games</button>
+
+
+    <p className="text-2xl font-bold mt-5">Our team</p>
+    <br />
+    <div className="text-center w-50 border-white border-2 p-2 rounded-xl">
+        <p className="font-bold">Nameless</p>
+        <p className="text-gray-400">Website developer</p>
+    </div>
+    <br />
+    <div className="text-center w-50 border-white border-2 p-2 rounded-xl">
+        <p className="font-bold">Jackko</p>
+        <p className="text-gray-400">UI design</p>
+    </div>
+    <br />
+    <div className="text-center w-50 border-white border-2 p-2 rounded-xl">
+        <p className="font-bold">Remmyy</p>
+        <p className="text-gray-400">On a journey to find a C++ dev</p>
+    </div>
   </>)
 }
