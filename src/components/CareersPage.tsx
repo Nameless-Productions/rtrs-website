@@ -9,5 +9,7 @@ export default function CareersPage() {
         <li>have some experience like personal projects</li>
         <li>optionally knows how to design 3D things</li>
     </ul>
+    <br />
+    <p>You can apply by joining our Discord server <a className="underline text-blue-400" target="_blank" href="https://discord.gg/CrEuWuDENn">here</a></p>
   </>)
 }
