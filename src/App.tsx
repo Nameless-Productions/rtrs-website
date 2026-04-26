@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import MainPage from './components/MainPage'
 import WishlistPage from './components/WishlistPage';
 
