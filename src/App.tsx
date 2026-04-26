@@ -15,7 +15,7 @@ export default function App() {
       <button onClick={() => setPage("wishlist")} className='font-bold cursor-pointer ml-auto bg-amber-100 text-black p-2 rounded-xl'>Wishlist</button>
     </nav>
     <main className='m-3'>
-      {page === "home" && <MainPage />}
+      {page === "home" && <MainPage setPage={setPage} />}
       {page === "wishlist" && <WishlistPage />}
       {page === "games" && <p className='font-bold'>Games coming soon!</p>}
     </main>
