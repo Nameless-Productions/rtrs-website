@@ -3,6 +3,9 @@ import MainPage from './components/MainPage'
 import WishlistPage from './components/WishlistPage';
 import CareersPage from './components/CareersPage';
 import GamesPage from './components/GamesPage';
+import Remmyy from './components/cv/Remmyy';
+import Jackko from './components/cv/Jackko';
+import Nameless from './components/cv/Nameless';
 
 export default function App() {
   const [page, setPage] = useState("home");
@@ -23,6 +26,9 @@ export default function App() {
       {page === "wishlist" && <WishlistPage />}
       {page === "games" && <GamesPage />}
       {page === "careers" && <CareersPage />}
+      {page === "remmyy" && <Remmyy />}
+      {page === "jackko" && <Jackko />}
+      {page === "nameless" && <Nameless />}
     </main>
   </>)
 }

@@ -17,16 +17,19 @@ export default function MainPage({setPage}: {setPage: any}) {
       <div className="text-center w-50 border-white border-2 p-2 rounded-xl">
           <p className="font-bold">Nameless</p>
           <p className="text-gray-400">Website developer</p>
+          <button className="btnNormal" onClick={() => setPage("nameless")}>View CV</button>
       </div>
 
       <div className="text-center w-50 border-white border-2 p-2 rounded-xl">
           <p className="font-bold">Jackko</p>
           <p className="text-gray-400">UI design</p>
+          <button className="btnNormal" onClick={() => setPage("jackko")}>View CV</button>
       </div>
 
       <div className="text-center w-50 border-white border-2 p-2 rounded-xl">
           <p className="font-bold">Remmyy</p>
           <p className="text-gray-400">On a journey to find a C# dev</p>
+          <button className="btnNormal" onClick={() => setPage("remmyy")}>View CV</button>
       </div>
     </div>
 
