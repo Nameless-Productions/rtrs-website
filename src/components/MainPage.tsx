@@ -26,7 +26,7 @@ export default function MainPage({setPage}: {setPage: any}) {
 
       <div className="text-center w-50 border-white border-2 p-2 rounded-xl">
           <p className="font-bold">Remmyy</p>
-          <p className="text-gray-400">On a journey to find a C++ dev</p>
+          <p className="text-gray-400">On a journey to find a C# dev</p>
       </div>
     </div>
 
