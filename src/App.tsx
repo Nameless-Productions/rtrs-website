@@ -29,6 +29,10 @@ export default function App() {
       {page === "remmyy" && <Remmyy />}
       {page === "jackko" && <Jackko />}
       {page === "nameless" && <Nameless />}
+
+      <br />
+      <p className='font-bold text-lg' style={{fontFamily: "Cabin Condensed"}}>Join our Discord:</p>
+      <iframe src="https://canary.discord.com/widget?id=1493337596909322281&theme=dark" width="350" height="500" allowTransparency={true} frameBorder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
     </main>
   </>)
 }
