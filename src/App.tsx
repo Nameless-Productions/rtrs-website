@@ -9,6 +9,23 @@ import Nameless from './components/cv/Nameless';
 
 export default function App() {
   const [page, setPage] = useState("home");
+
+  console.log(
+    `%c
+  ██████╗ ████████╗██████╗ 
+  ██╔══██╗╚══██╔══╝██╔══██╗
+  ██████╔╝   ██║   ██████╔╝
+  ██╔══██╗   ██║   ██╔══██╗
+  ██║  ██║   ██║   ██║  ██║
+  ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝
+  `,
+    "color: #7c3aed; font-family: monospace;"
+  );
+
+  console.log(
+    "%cHey, you found this. That means you're our kind of person. We are hiring!",
+    "color: #fff; font-size: 14px;"
+  );
   return (<>
     <nav className='flex border-b-2 border-b-white p-2 space-x-3'>
       <button onClick={() => setPage("home")} className='text-2xl font-bold cursor-pointer'>Right to Roam <span className='text-yellow-400'>Studios</span></button>
