@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import MainPage from './components/MainPage'
 import WishlistPage from './components/WishlistPage';
 import CareersPage from './components/CareersPage';
@@ -6,9 +6,11 @@ import GamesPage from './components/GamesPage';
 import Remmyy from './components/cv/Remmyy';
 import Jackko from './components/cv/Jackko';
 import Nameless from './components/cv/Nameless';
+import SecretPage from './components/secretPage';
 
 export default function App() {
   const [page, setPage] = useState("home");
+  const [titleClicks, setTitleClick] = useState(0)
 
   console.log(
     `%c
@@ -26,9 +28,17 @@ export default function App() {
     "%cHey, you found this. That means you're our kind of person. We are hiring!",
     "color: #fff; font-size: 14px;"
   );
+
+
+  useEffect(() => {
+    console.log(titleClicks)
+    if(titleClicks === 5){
+      setPage("secret");
+    }
+  }, [titleClicks])
   return (<>
     <nav className='flex border-b-2 border-b-white p-2 space-x-3'>
-      <button onClick={() => setPage("home")} className='text-2xl font-bold cursor-pointer'>Right to Roam <span className='text-yellow-400'>Studios</span></button>
+      <button onClick={() => setPage("home")} className='text-2xl font-bold cursor-pointer'>Right to Roam <span className='text-yellow-400' title='Click me 5 times' onClick={() => setTitleClick((c) => c + 1)}>Studios</span></button>
 
       <button onClick={() => setPage("home")} className='font-bold cursor-pointer'>Home</button>
 
@@ -46,6 +56,7 @@ export default function App() {
       {page === "remmyy" && <Remmyy />}
       {page === "jackko" && <Jackko />}
       {page === "nameless" && <Nameless />}
+      {page === "secret" && <SecretPage />}
 
       <br />
       <p className='font-bold text-lg' style={{fontFamily: "Cabin Condensed"}}>Join our Discord:</p>
