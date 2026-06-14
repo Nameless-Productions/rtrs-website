@@ -7,7 +7,7 @@ export default function GamesPage() {
         <p className="font-bold text-xl">Jobless</p>
         <hr className="-mx-3 text-gray-800" />
         <p className="text-gray-400 mb-3">A 2D survival game where you play as an unemployed young adult. You start with nothing, but you work your way up through technology without ever getting a job.</p>
-        <a href="/jobless.zip" className="btnNormal">Download</a>
+        <a href="https://thenamelessdev0.itch.io/jobless" className="btnNormal">Download</a>
     </div>
 
     <div className="text-center border-2 border-gray-800 w-50 p-3 rounded-xl mt-5">
